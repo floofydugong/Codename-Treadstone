@@ -1,0 +1,4 @@
+def add_binary(a,b):
+    print bin(a+b)[2:]
+
+add_binary(1,1)
