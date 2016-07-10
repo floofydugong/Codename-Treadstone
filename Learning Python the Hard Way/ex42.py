@@ -48,7 +48,7 @@ rover = Dog("Rover")
 ## Satan is-a cat
 satan = Cat("Satan")
 
-## Mary is-a person
+## Mary is-a person with the name "Mary"
 mary = Person("Mary")
 
 ## Mary has a pet named Satan
@@ -60,13 +60,13 @@ frank = Employee("Frank", 120000)
 ## Frank has a pet name Rover
 frank.pet = rover
 
-## Flipper is-a fish
+## Flipper is-an instance of a fish
 flipper = Fish()
 
-## Crouse is-a Salmon
+## Crouse is-an instance of Salmon
 crouse = Salmon()
 
-## Harry is-a Halibut
+## Harry is-an instance of Halibut
 harry = Halibut()
 
 
