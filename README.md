@@ -1,2 +1,2 @@
 # Treadstone
-Side Projects/Exercises that I've worked on.
+Python coding practice repository
