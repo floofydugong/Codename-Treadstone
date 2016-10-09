@@ -1,4 +1,4 @@
-[![GitHub forks](https://img.shields.io/github/forks/badges/shields.svg?style=social&label=Fork&maxAge=2592000)]()
+[![GitHub forks](https://img.shields.io/github/forks/floofydugong/Metis_Projects.svg)]()
 
 # Treadstone
 Python coding practice repository
