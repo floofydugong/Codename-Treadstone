@@ -3,6 +3,7 @@
 # Example:
 
 # Calculator().evaluate("2 / 2 + 3 * 4 - 6") # => 7
+# "2/2+3*4-6"
 
 import unittest
 
@@ -14,11 +15,13 @@ def Calculate(arg1):
     new_calc = Calculator()
     return (new_calc.evaluate(arg1))
 
-Calculate('2 / 2 + 3 * 4 - 6')
+# Calculate('2 / 2 + 3 * 4 - 6')
 
 class MyTest(unittest.TestCase):
-    def test1(self):
-        self.assertEqual(Calculate('2 / 2 + 3 * 4 - 6'),7)
+    # def test1(self):
+    #     self.assertEqual(Calculate('2 / 2 + 3 * 4 - 6'),7)
+    def test2(self):
+        self.assertEqual(Calculate('49 / 7'),7)
 
 if __name__ == '__main__':
     unittest.main()
