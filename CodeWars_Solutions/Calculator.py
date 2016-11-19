@@ -9,7 +9,7 @@ import unittest
 
 class Calculator(object):
   def evaluate(self, string):
-    return 7
+    return (round(eval(string),4))
 
 def Calculate(arg1):
     new_calc = Calculator()
@@ -21,7 +21,7 @@ class MyTest(unittest.TestCase):
     # def test1(self):
     #     self.assertEqual(Calculate('2 / 2 + 3 * 4 - 6'),7)
     def test2(self):
-        self.assertEqual(Calculate('49 / 7'),7)
+        self.assertEqual(Calculate('1.1*2.2*3.3'),7.986)
 
 if __name__ == '__main__':
     unittest.main()
