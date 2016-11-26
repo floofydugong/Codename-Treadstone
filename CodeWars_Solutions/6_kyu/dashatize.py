@@ -7,4 +7,4 @@ def dashatize(num):
         print(i)
         i =+ 1
 
-dashatize(974302)
+dashatize(974302)h
