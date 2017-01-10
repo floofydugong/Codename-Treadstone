@@ -1,3 +1,5 @@
+# non-working solution
+
 def is_merge(s, part1, part2):
     part1 = list(part1)
     part2 = list(part2)
@@ -11,7 +13,5 @@ def is_merge(s, part1, part2):
         else:
             return(False)
     return(part1 == part2)
-
-
 
 is_merge('codewars','cod','wars')
