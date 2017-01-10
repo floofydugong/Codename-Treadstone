@@ -1,19 +1,17 @@
 def is_merge(s, part1, part2):
-    # idea is to pop
-
     part1 = list(part1)
     part2 = list(part2)
 
-    for index,value in enumerate(s):
-        try:
-            if part1 and value in part1[0]:
-                del part1[0]
-            elif value in part2[0]:
-                del part2[0]
-            else:
-                return(False)
-        except:
+
+    for char in s:
+        if part1 and char == part1[0]:
+            del part1[0]
+        elif part2 and char == part2[0]:
+            del part2[0]
+        else:
             return(False)
-    return(True)
+    return(part1 == part2)
+
+
 
 is_merge('codewars','cod','wars')
