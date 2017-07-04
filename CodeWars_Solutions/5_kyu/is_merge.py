@@ -1,17 +1,14 @@
-# non-working solution
+# recursion problem
 
 def is_merge(s, part1, part2):
-    part1 = list(part1)
-    part2 = list(part2)
+    # return (s == part1 + part2 if not (s and part1 and part2) else
+    #     s[0] == part1[0] and is_merge(s[1:], part1[1:], part2) or
+    #     s[0] == part2[0] and is_merge(s[1:], part1, part2[1:]))
 
+    if not (s and part1 and part2):
+      return(s == part1 + part2)
+    else:
+      return(s[0] == part1[0] and is_merge(s[1:], part1[1:], part2) or
+        s[0] == part2[0] and is_merge(s[1:], part1, part2[1:]))
 
-    for char in s:
-        if part1 and char == part1[0]:
-            del part1[0]
-        elif part2 and char == part2[0]:
-            del part2[0]
-        else:
-            return(False)
-    return(part1 == part2)
-
-is_merge('codewars','cod','wars')
+is_merge('ananas','ana','nas')
