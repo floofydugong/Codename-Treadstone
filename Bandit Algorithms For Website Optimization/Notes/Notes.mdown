@@ -59,4 +59,6 @@ Why is this a bad strategy?
 # Chapter 3 - The epsilon-Greedy Algorithm
 - Greedy algorithm - an algorithm that always takes whatever action seems best at the present moment, even when that decision might lead to bad long term consequences
 
-- ![Greedy Epsilon Algorithm]({{site.baseurl}}/http://rs.static.noteton.com/u/068da298-dba6-4314-855a-a5be63bc54ea/1662475342b0af7895a497198eec0e4c.png)
+- INSERT IMAGE HERE (Figure 3-1. The epsilon-Greedy arm selection process)
+
+- Oscillates between (A) exploiting the best option that it currently knows about and (B) exploring at random among all of the options available to it
