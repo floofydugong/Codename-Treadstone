@@ -1,0 +1,62 @@
+# Definitions (all in the context of slot machines in a casino)
+
+1. Reward - A quantitative measure of success. Requires two things (A) there is a clear quantitative scale and (B) it’s better to have more reward than less reward.
+
+2. Arm - What options are available to us? 
+
+3. Bandit - A bandit is a collection of arms aka Multi-armed Bandit.
+
+4. Play/Trial - Each chance you have to pull on an arm will be called a play or, more often, a trial. 
+
+5. Horizon - The number of trials left
+
+6. Exploitation - Plays the arm with the highest estimated value based on previous plays.
+
+7. Exploration - Plays any arm that does not have the highest estimated value based on previous plays. In other words, exploration occurs whenever exploitation does not.
+
+8. Explore/Exploit Dilemma - The observation that any learning system must strike a compromise between its impulse to explore and its impulse to exploit. 
+
+9. Annealing - An algorithm for solving the Multi-armed Bandit Problem anneals if it explores less over time.
+
+10. Temperature - A parameter that can be adjusted to increase the amount of exploration in the Soft-max algorithm for solving the Multi-armed Bandit Problem. If you decrease the temperature parameter over time, this causes the algorithm to anneal.
+
+11. Streaming Algorithms - An algorithm is a streaming algorithm if it can process data one piece at a time. This is the opposite of batch processing algorithms that need access to all of the data in order to do anything with it.
+
+12. On-line Learning - An algorithm is an on-line learning algorithm if it can not only process data one piece at a time, but can also provide provisional results of its analysis after each piece of data is seen.
+
+13. Active Learning
+An algorithm is an active learning algorithm if it can decide which pieces of data it wants to see next in order to learn most effectively. Most traditional machine learn‐ ing algorithm are not active: they passively accept the data we feed them and do not tell us what data we should collect next.
+
+14. Bernoulli - A Bernoulli system outputs a 1 with probability p and a 0 with probability 1 – p. (heads or tails is a good example)
+
+# Chapter 1 - Two Characters: Exploration and Exploitation
+
+- Two big takeaways from the Scientist (who loves to experiment) vs. the business man (who was skeptical and risk averse)
+- Needed a simple way to balance the need to 
+	(1) learn new things
+	(2) profit from old things that she’d already learned."
+
+- Weakness of A/B Testing (Example being given is about changing a logo design color)
+	- Fixed Horizons
+	- Doesn't address this
+		- If you do too much exploration, you lose money. And if you do too much exploitation, you stagnate and miss out on new opportunities
+	- For example, a trial period of A/B testing followed by sticking strictly to the best design afterwards only makes sense if there is a definite best design that consistently works (Example: Changing the logo color to things that work during only Christmas, and then seeing a drop in sales every other month)
+	-  If you run an experiment that stretches across both times of year, you’ll see no average effect for your two color schemes — even though there’s a huge effect in each of the seasons if you had examined them separately. 
+
+# Chapter 2 - Why Use Multiarmed Bandit Algorithms?
+- Success can be measured with Traffice (increase), conversion, sales, CTRs (Click Through Rates)
+
+Standard A/B Testing
+- A short period of pure exploration, in which you assign equal numbers of users to Groups A and B.
+- A long period of pure exploitation, in which you send all of your users to the more successful version of your site and never come back to the option that seemed to be inferior.
+
+Why is this a bad strategy?
+- No smooth transition from exploration to exploitation
+- During exploratory phase, you're wasting a lot of resources 
+
+- All good bandit algorithms will eventually converge.
+
+# Chapter 3 - The epsilon-Greedy Algorithm
+- Greedy algorithm - an algorithm that always takes whatever action seems best at the present moment, even when that decision might lead to bad long term consequences
+
+
