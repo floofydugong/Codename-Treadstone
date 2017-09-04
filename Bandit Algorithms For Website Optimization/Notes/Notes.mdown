@@ -43,7 +43,7 @@ An algorithm is an active learning algorithm if it can decide which pieces of da
 	- For example, a trial period of A/B testing followed by sticking strictly to the best design afterwards only makes sense if there is a definite best design that consistently works (Example: Changing the logo color to things that work during only Christmas, and then seeing a drop in sales every other month)
 	-  If you run an experiment that stretches across both times of year, you’ll see no average effect for your two color schemes — even though there’s a huge effect in each of the seasons if you had examined them separately. 
 
-# Chapter 2 - Why Use Multiarmed Bandit Algorithms?
+# Chapter 2 - Why Use Multiarmed Bandit Algorithms? 
 - Success can be measured with Traffice (increase), conversion, sales, CTRs (Click Through Rates)
 
 Standard A/B Testing
@@ -59,4 +59,4 @@ Why is this a bad strategy?
 # Chapter 3 - The epsilon-Greedy Algorithm
 - Greedy algorithm - an algorithm that always takes whatever action seems best at the present moment, even when that decision might lead to bad long term consequences
 
-
+- ![Greedy Epsilon Algorithm]({{site.baseurl}}/http://rs.static.noteton.com/u/068da298-dba6-4314-855a-a5be63bc54ea/1662475342b0af7895a497198eec0e4c.png)
