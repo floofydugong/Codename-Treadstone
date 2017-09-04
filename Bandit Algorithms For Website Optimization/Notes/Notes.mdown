@@ -4,7 +4,7 @@
 
 2. Arm - What options are available to us? 
 
-3. Bandit - A bandit is a collection of arms aka Multi-armed Bandit.
+3. Bandit - A bandit a complicated slot machine, that can one have or many arms
 
 4. Play/Trial - Each chance you have to pull on an arm will be called a play or, more often, a trial. 
 
@@ -62,3 +62,24 @@ Why is this a bad strategy?
 - INSERT IMAGE HERE (Figure 3-1. The epsilon-Greedy arm selection process)
 
 - Oscillates between (A) exploiting the best option that it currently knows about and (B) exploring at random among all of the options available to it
+
+- What's a Bandit Problem? - Defined by the following features
+
+1. Facing a complicated slot machine, with a set of N arms
+2. When pulled, arms will give rewards (but unreliable at different payout schedules)
+3. We don't know the reward rates for each of the arms. Forced to pull arms
+4. Whatever arm we pull, we will gain information about that arm, but miss out on other arms.
+5. Every time we experiment with an arm that isn’t the best arm, we lose reward be‐ cause we could, at least in principle, have pulled on a better arm.
+
+- If you have a multi-armed bandit problem, statistics would naturally lead you to calculate the highest reward average for each arm. But reason 4 and 5 above is what makes it more complicated/realistic
+
+- If we were to stick to a 50/50 split between two logos, the experiment can be ran as such
+
+        algo = EpsilonGreedy(1.0, [])
+            initialize(algo, 2)
+            
+- Or if we were to not explore at all and just explot, we could write:
+         algo.epsilon = 0.0
+
+**Weaknesses of Epsilon Greedy**
+- As you become more certain of the best option, the tendency to explore the worse design a full 5% of the time will become more wasteful (if epsilon is set to 10%)
