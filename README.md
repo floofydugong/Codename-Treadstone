@@ -4,7 +4,7 @@ Python coding practice repository
 
 # CodeWars
 
-[codewars](http://codewars.com) is a website where you can improve your skills by training with others on real code challenges. Currently, I practice my python/algoritm skills on here.
+[Codewars](http://codewars.com) is a website where you can improve your skills by training with others on real code challenges. Currently, I practice my python/algoritm skills on here.
 
 Each challenge is ranked from `<8kyu>` (easy, basic, fundamentals) to `<1kyu>` (hard, expert, compilers).
 
